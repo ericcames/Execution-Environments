@@ -18,6 +18,6 @@ Red Hat Base Images for use in building Execution/Descision Environments.
 4. podman tag localhost/cohesity_rhel9:1.0.0 quay.io/zigfreed/cohesity_rhel9:1.0.0
 5. podman login quay.io
 6. podman push quay.io/zigfreed/cohesity_rhel9:1.0.0
-7. Is the container public?
+7. Is the repository public?
 8. Move the latest tag
 ```
