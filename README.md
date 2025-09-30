@@ -6,6 +6,7 @@ Red Hat Base Images for use in building Execution/Descision Environments.
 [Container results for ansible-automation-platform](https://catalog.redhat.com/en/search?searchType=Containers&q=ansible-automation-platform&p=1 "Container results for ansible-automation-platform")<br>
 
 **Execution environment definition**
+
 [Execution environment definition](https://ansible.readthedocs.io/projects/builder/en/stable/definition/#overview "Execution environment definition")<br>
 
 **Manual container build process**
