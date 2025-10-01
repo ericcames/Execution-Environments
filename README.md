@@ -21,3 +21,7 @@ Red Hat Base Images for use in building Execution/Descision Environments.
 7. Is the repository public?
 8. Move the latest tag
 ```
+
+**Public container repo**
+
+[Zigfreed's public containers](https://quay.io/repository/ "Zigfreed's public containers")<br>
