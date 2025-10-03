@@ -14,14 +14,3 @@ dependencies:
 
 options:
   package_manager_path: /usr/bin/microdnf
-
-additional_build_files:
-  - src: /home/eames/.ssh/ansible/ansible.cfg
-    dest: configs
-
-additional_build_steps:
-  prepend_base:
-    # Make ansible dir becauser ADD ~/.ansible.cfg not working
-    - RUN mkdir -p /etc/ansible/
-  prepend_galaxy:
-    - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg

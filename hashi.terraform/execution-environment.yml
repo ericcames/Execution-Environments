@@ -12,7 +12,7 @@ options:
   package_manager_path: /usr/bin/microdnf
 
 additional_build_files:
-  - src: /home/eames/.ssh/ansible/ansible.cfg
+  - src: /home/eames/.ansible/ansible.cfg
     dest: configs
 
 additional_build_steps:
