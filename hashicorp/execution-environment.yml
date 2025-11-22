@@ -19,5 +19,7 @@ additional_build_steps:
   prepend_base:
     # Make ansible dir becauser ADD ~/.ansible.cfg not working
     - RUN mkdir -p /etc/ansible/
+    - RUN curl "https://releases.hashicorp.com/terraform/1.14.0/terraform_1.14.0_linux_amd64.zip" -o "terraform.zip" && unzip terraform.zip && mv terraform /usr/local/bin/ && rm terraform.zip
+    - RUN terraform --version
   prepend_galaxy:
     - ADD _build/configs/ansible.cfg /etc/ansible/ansible.cfg
