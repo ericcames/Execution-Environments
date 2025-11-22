@@ -1,6 +1,0 @@
----
-collections:
-  - name: hashicorp.terraform
-    version: "1.0.0"
-  - name: ansible.utils
-    version: "6.0.0"
