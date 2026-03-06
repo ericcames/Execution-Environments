@@ -1,0 +1,37 @@
+---
+version: 3
+
+images:
+  base_image:
+    name: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel9:latest
+    pull: true
+
+dependencies:
+  python:
+     - ansible-navigator
+     - boto3
+     - requests
+  system:
+     - openssh-clients
+     - sshpass
+     - libxml2-devel
+  galaxy:
+    collections:
+      - name: ansible.posix
+      - name: ansible.utils
+  python_interpreter:
+        package_system: "python3"
+        python_path: "/usr/bin/python3"
+  ansible_core:
+        package_pip: ansible-core
+  ansible_runner:
+        package_pip: ansible-runner
+
+options:
+  package_manager_path: /usr/bin/microdnf
+  tags:
+     - ee-config
+
+additional_build_steps:
+  append_base:
+     - RUN $PYCMD -m pip install -U pip
